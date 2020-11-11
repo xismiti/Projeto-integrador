@@ -1,2 +1,0 @@
-A=input ('Qual sua música favorita do latino?')
-Print(A,'essa é braba')
