@@ -1,6 +1,6 @@
 #variaveis "op" e "op2" são referentes ao menus de opções
 
-print('='*30,'\nBem-vindo ao Pyrhon Bridge!')
+print('='*30,'\nBem-vindo ao Python Bridge!')
 print('='*30)
 input()
 op=1
