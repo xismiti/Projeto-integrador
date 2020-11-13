@@ -102,7 +102,19 @@ while True:
                     print('Muito obrigado(a) pela paciência ' + str(nome) + '! \nO cadastro foi realizado com sucesso!')
                     break
         elif op2==4:
-            print('='*30)
-            print('Vamos cadastrar seu Software!')
-        else:
+            op3=1
+            while True:
+                print('='*30)
+                print('Vamos cadastrar seu Software!')
+                input()
+                nome_software=str(input('Digite o nome do seu software: '))
+                input()
+                print('Excelente nome :D! Agora nos diga em qual categoria abaixo seu software se encaixa melhor:\n1-Saude\n2-Educacional\n3-Empresarial\n4-Banco de dados')
+                op3=int(input('Digite sua alternativa: ')
+                software=[nome_software,op3]
+                input()
+                print('='*30)
+                input('Obrigado por cadastrar seu software, para sair pressione ENTER:')
+                break
+        elif op==5:
             break
