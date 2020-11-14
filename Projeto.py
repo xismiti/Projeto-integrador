@@ -3,7 +3,7 @@ print('='*30)
 input()
 op=1
 while True:
-    print('Para começar, escolha uma das opções abaixo:\n1- Cadastrar-se\n2- Comprar software\n3- Nossa historia\n4- Sair')
+    print('Para começar, escolha uma das opções abaixo:\n1- Cadastrar-se\n2- Comprar software\n3- Saiba mais\n4- Sair')
     print('=' * 30)
     op = int(input('Digite sua opção: '.strip()))
     if op==1:
@@ -57,58 +57,6 @@ while True:
                     email = input('Digite razão social: ')
                     senha = input('Digite seu CNPJ: ')
 
-
-
-                    print ("-" * 30)
-                    menu = int (input("Digite:\n 1 - para a lista de todos os softwares\n 2 - para pesquisar um software\n"))
-
-
-                    if menu == 1:
-                       print ("-" * 30)
-                       menu_cliente=int(input("\n\tDigite 1 para visualizar todos softwares e 2 para ver recomendações de consultores: "))
-                       nome_cliente = input("\n\tDigite o nome do cliente: ")
-                       if menu_cliente==1: #exibe todos softwares
-                            print("\n\tNome Software",nome_software)
-                            print("\n\tPreço software:",preco_software)
-                            print("\n\tNome do fornecedor:",fornecedor_software)
-                            print("\n\tInformação do software",informacao_software)
-                            if recomendacao_cliente==nome_cliente:                          
-                                print("\n\tNome do consultor:",consultor_software)
-                                print("\n\tInformações recomendação:",recomendacao_software)
-                                print("\n\tNota do software:",nota_software)
-
-
-                      if menu_cliente==2: #exibe apenas recomendados
-               
-  
-                        if recomendacao_cliente==nome_cliente:
-                        
-                                     
-                             print("\n\tNome Software",nome_software)
-                             print("\n\tPreço software:",preco_software)
-                             print("\n\tNome do fornecedor:",fornecedor_software)
-                             print("\n\tInformação do software",informacao_software)
-                             print("\n\tNome do consultor:",consultor_software)
-                             print("\n\tInformações recomendação:",recomendacao_software)
-                             print("\n\tNota do software:",nota_software)
-
-                  elif menu ==2:
-                     print ("-" * 30)
-                    nome_software = input("Digite o nome do software que deseja pesquisar: ")
-                    if recomendacao_cliente==nome_cliente:
-             
-                        print ("-" * 30)
-                        print("\n\tNome Software",nome_software)
-                        print("\n\tPreço software:",preco_software)
-                        print("\n\tNome do fornecedor:",fornecedor_software)
-                        print("\n\tInformação do software",informacao_software)
-                        print("\n\tNome do consultor:",consultor_software)
-                        print("\n\tInformações recomendação:",recomendacao_software)
-                        print("\n\tNota do software:",nota_software)
-                        print ("-" * 30)
-
-                    
-                    
                     print('Aguarde uns segundos...')
                     break
                 elif controle == 2:
@@ -154,7 +102,51 @@ while True:
                     print('Muito obrigado(a) pela paciência ' + str(nome) + '! \nO cadastro foi realizado com sucesso!')
                     break
         elif op2==4:
-            print('='*30)
-            print('Vamos cadastrar seu Software!')
-        else:
+            op3=1
+            while True:
+                print('='*30)
+                print('Vamos cadastrar seu Software!')
+                input()
+                nome_software=str(input('Digite o nome do seu software: '))
+                input()
+                print('Excelente nome :D! Agora nos diga em qual categoria abaixo seu software se encaixa melhor:\n1-Saude\n2-Educacional\n3-Empresarial\n4-Banco de dados')
+                op3=int(input('Digite sua alternativa: '))
+                catg=0
+                if op3==1:
+                    catg='Saude'
+                elif op3==2:
+                    catg='Educacional'
+                elif op3==3:
+                    catg='Empresarial'
+                elif op3==4:
+                    catg='Banco de dados'
+
+                software=[nome_software,catg]
+                input()
+                print('='*30)
+                input('Obrigado por cadastrar seu software, para sair pressione ENTER:')
+                break
+
+
+
+        elif op==5:
             break
+    elif op==2:
+        print('Selecione a categoria do software que voce procura:\n1-Saude\n2-Educacional\n3-Empresarial\n4-Banco de dados')
+        software_procurado=input('Digite sua opção:')
+        if True:
+            software_procurado==software
+            print('Uma escelente escolha é o',software[0])
+            input()
+
+
+    elif op==3:
+        while True:
+            print('='*30)
+            input()
+            print('Python Bridge surgiu através ada necessidade um intermediador e um facilitador para empresas que procuram implantar softwares.\nNossa equipe altamente dedicada e atensiosa tem como objetivo facilitar sua vida\ne lhe mostrar oque ha de melhor no mercado atual.')
+            print('=' * 30)
+            input()
+            break
+    else:
+        break
