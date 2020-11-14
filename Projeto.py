@@ -57,6 +57,58 @@ while True:
                     email = input('Digite razão social: ')
                     senha = input('Digite seu CNPJ: ')
 
+
+
+                    print ("-" * 30)
+                    menu = int (input("Digite:\n 1 - para a lista de todos os softwares\n 2 - para pesquisar um software\n"))
+
+
+                    if menu == 1:
+                       print ("-" * 30)
+                       menu_cliente=int(input("\n\tDigite 1 para visualizar todos softwares e 2 para ver recomendações de consultores: "))
+                       nome_cliente = input("\n\tDigite o nome do cliente: ")
+                       if menu_cliente==1: #exibe todos softwares
+                            print("\n\tNome Software",nome_software)
+                            print("\n\tPreço software:",preco_software)
+                            print("\n\tNome do fornecedor:",fornecedor_software)
+                            print("\n\tInformação do software",informacao_software)
+                            if recomendacao_cliente==nome_cliente:                          
+                                print("\n\tNome do consultor:",consultor_software)
+                                print("\n\tInformações recomendação:",recomendacao_software)
+                                print("\n\tNota do software:",nota_software)
+
+
+                      if menu_cliente==2: #exibe apenas recomendados
+               
+  
+                        if recomendacao_cliente==nome_cliente:
+                        
+                                     
+                             print("\n\tNome Software",nome_software)
+                             print("\n\tPreço software:",preco_software)
+                             print("\n\tNome do fornecedor:",fornecedor_software)
+                             print("\n\tInformação do software",informacao_software)
+                             print("\n\tNome do consultor:",consultor_software)
+                             print("\n\tInformações recomendação:",recomendacao_software)
+                             print("\n\tNota do software:",nota_software)
+
+                  elif menu ==2:
+                     print ("-" * 30)
+                    nome_software = input("Digite o nome do software que deseja pesquisar: ")
+                    if recomendacao_cliente==nome_cliente:
+             
+                        print ("-" * 30)
+                        print("\n\tNome Software",nome_software)
+                        print("\n\tPreço software:",preco_software)
+                        print("\n\tNome do fornecedor:",fornecedor_software)
+                        print("\n\tInformação do software",informacao_software)
+                        print("\n\tNome do consultor:",consultor_software)
+                        print("\n\tInformações recomendação:",recomendacao_software)
+                        print("\n\tNota do software:",nota_software)
+                        print ("-" * 30)
+
+                    
+                    
                     print('Aguarde uns segundos...')
                     break
                 elif controle == 2:
@@ -102,19 +154,7 @@ while True:
                     print('Muito obrigado(a) pela paciência ' + str(nome) + '! \nO cadastro foi realizado com sucesso!')
                     break
         elif op2==4:
-            op3=1
-            while True:
-                print('='*30)
-                print('Vamos cadastrar seu Software!')
-                input()
-                nome_software=str(input('Digite o nome do seu software: '))
-                input()
-                print('Excelente nome :D! Agora nos diga em qual categoria abaixo seu software se encaixa melhor:\n1-Saude\n2-Educacional\n3-Empresarial\n4-Banco de dados')
-                op3=int(input('Digite sua alternativa: ')
-                software=[nome_software,op3]
-                input()
-                print('='*30)
-                input('Obrigado por cadastrar seu software, para sair pressione ENTER:')
-                break
-        elif op==5:
+            print('='*30)
+            print('Vamos cadastrar seu Software!')
+        else:
             break
