@@ -11,7 +11,7 @@ while True:
         cpf=input('Digite seu CPF: ')
         tele=input('Digite seu telefone/celular: ')
         email=input('Digite seu e-mail: ')        
-        formacao=input('Qual a sua formação? ')
+        formacao=input('Qual é a sua formação? ')
         experiencia=input('Quais são suas experiências na área da TI? ')
-        print('Muito obrigado(a) pela paciência ' + str(nome) + '! \nO cadastro foi realizado com sucesso!')
+        print('Muito obrigado(a) pela paciência,' + str(nome) + '!\nO cadastro foi realizado com sucesso!')
         break
