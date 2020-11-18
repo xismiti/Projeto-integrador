@@ -1,4 +1,6 @@
 import random
+import re
+import time
 
 print ('Obrigado pela preferencia! \nEscolha um dos metodos disponis para prosseguir com a sua compra!')
 print ('Metodos de pagamento disponiveis:')
@@ -36,7 +38,13 @@ if payment == 3:
     sixth_block = random.randrange(10000, 99999)
     seventh_block = random.randrange(10000, 99999)
     eighth_block = random.randrange(1, 9)
-    ninth_block = random.randrange(100000000000000, 999999999999999)
-
-    print("Numero para o pagamento do seu boleto: ", first_block, second_block, thrid_block, fourth_block, fifth_block, sixth_block, seventh_block, eighth_block, ninth_block)
-    print("O pagamento é aprovado em até 3 dias uteis apos o pagamento do boleto!")
+    ninth_block = random.randrange(100000000000000, 999999999999999) 
+    mensagem_pagamento = "Numero para o pagamento do seu boleto: "
+    
+    print("Estamos processando o seu pedido...")
+    time.sleep(5)
+    print("."*120)
+    time.sleep(3)
+    print(mensagem_pagamento, first_block, second_block, thrid_block, fourth_block, fifth_block, sixth_block, seventh_block, eighth_block, ninth_block)
+    time.sleep(3)
+    print("O pagamento é aprovado em até 3 dias uteis após o pagamento!")
