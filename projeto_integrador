@@ -102,6 +102,7 @@ while True:
                     email = input('Digite seu e-mail: ')
                     formacao = input('Qual a sua formação? ')
                     experiencia = input('Quais são suas experiências na área da TI? ')
+                    taxa_comissao = int (input("Digite quantos % voce cobra pela consultoria"))
                     print('Muito obrigado(a) pela paciência ' + str(nome) + '! \nO cadastro foi realizado com sucesso!')
                     break
         elif op2==4:
@@ -158,6 +159,8 @@ while True:
             if op4 == 1:
                 print('='*30)
                 input()
+                print("\n\tVoce tem a pagar pelo software o valor de:",preco_software)
+                comissao = ((taxa_comissao/100) * (int(preco_software)))
                 print('Obrigado pela preferencia! \nEscolha um dos metodos disponis para prosseguir com a sua compra!')
                 print('Metodos de pagamento disponiveis:')
                 print('Cartao de credito, digite 1')
