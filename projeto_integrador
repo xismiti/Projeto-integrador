@@ -161,6 +161,7 @@ while True:
                 input()
                 print("\n\tVoce tem a pagar pelo software o valor de:",preco_software)
                 comissao = ((taxa_comissao/100) * (int(preco_software)))
+                print("O consultor de comissão receberá o valor de:",comissao)
                 print('Obrigado pela preferencia! \nEscolha um dos metodos disponis para prosseguir com a sua compra!')
                 print('Metodos de pagamento disponiveis:')
                 print('Cartao de credito, digite 1')
