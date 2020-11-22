@@ -6,7 +6,7 @@ input()
 op=1
 while True:
     print('=' * 30)
-    print('Para começar, escolha uma das opções abaixo:\n1- Cadastrar-se\n2- Comprar software\n3- Saiba mais\n4- Sair')
+    print('Para começar, escolha uma das opções abaixo:\n1- Cadastrar-se\n2- Comprar software\n3- Saiba mais\n4 - perfil consultor\n5- Sair')
     print('=' * 30)
     op = int(input('Digite sua opção: '.strip()))
     if op==1:
@@ -270,5 +270,13 @@ while True:
             print('=' * 30)
             input()
             break
+    elif op==4:
+        while True:
+            print('='*30)
+            input()
+            print('\n\nOlá, atenção: você tem de comissão a receber:',comissao)
+            print('\nOlá consultor com nome:',nome,'\nSeu cpf é:',cpf,'\nSeu telefone é:',telefone,'\nSeu email é:email,'\nSua formacao é:',formacao,'\nSua experiencia é:',experiencia,'\nSua taxa de comissão é:',taxa_comissao)
+          
+                       
     else:
         break
