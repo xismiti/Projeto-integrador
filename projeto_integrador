@@ -103,6 +103,7 @@ while True:
                     formacao = input('Qual a sua formação? ')
                     experiencia = input('Quais são suas experiências na área da TI? ')
                     taxa_comissao = int (input("Digite quantos % voce cobra pela consultoria"))
+                    comissao = 0
                     print('Muito obrigado(a) pela paciência ' + str(nome) + '! \nO cadastro foi realizado com sucesso!')
                     break
         elif op2==4:
@@ -160,7 +161,7 @@ while True:
                 print('='*30)
                 input()
                 print("\n\tVoce tem a pagar pelo software o valor de:",preco_software)
-                comissao = ((taxa_comissao/100) * (int(preco_software)))
+                comissao += ((taxa_comissao/100) * (int(preco_software)))
                 print("O consultor de comissão receberá o valor de:",comissao)
                 print('Obrigado pela preferencia! \nEscolha um dos metodos disponis para prosseguir com a sua compra!')
                 print('Metodos de pagamento disponiveis:')
