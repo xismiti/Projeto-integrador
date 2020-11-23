@@ -267,6 +267,7 @@ while True:
             print('='*30)
             input()
             print('Python Bridge surgiu através ada necessidade um intermediador e um facilitador para empresas que procuram implantar softwares.\nNossa equipe altamente dedicada e atensiosa tem como objetivo facilitar sua vida\ne lhe mostrar oque ha de melhor no mercado atual.')
+            print('\nIntegrantes do grupo:\nMaria Helena\nDouglas\nGuilherme\nVinicius\nHelen')
             print('=' * 30)
             input()
             break
