@@ -267,7 +267,9 @@ while True:
             print('='*30)
             input()
             print('Python Bridge surgiu através ada necessidade um intermediador e um facilitador para empresas que procuram implantar softwares.\nNossa equipe altamente dedicada e atensiosa tem como objetivo facilitar sua vida\ne lhe mostrar oque ha de melhor no mercado atual.')
-            print('\nIntegrantes do grupo:\nMaria Helena\nDouglas\nGuilherme\nVinicius\nHelen')
+            print('\nIntegrantes do grupo:\nMaria Helena Saraiva\nDouglas Chaves\nGuilherme Schmidt\nVinicius Brandao\nHelen Lazarotti\nRodrigo Pioner')
+            print('\nProjeto Integrador')
+            print('\nPython Bridge é o nosso nome, pois o nosso propósito é fazer a ponte entre todos os stakeholders envolvidos na aquisição de um software: os fornecedores, os clientes e os consultores. Para criarmos esse nome, partimos da ideia dessa conexão que promoveremos. Além disso, julgamos importante que o nome da linguagem que estamos aprendendo nesse trimestre e que iremos utilizar no desenvolvimento do nosso software aparecesse. Ademais, optamos por um nome em inglês pois além desta ser a língua mais falada no mundo, a maior parte das linguagens de programação, dos softwares e dos componentes de hardware são feitos em inglês.')
             print('=' * 30)
             input()
             break
