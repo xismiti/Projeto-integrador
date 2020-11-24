@@ -6,7 +6,7 @@ input()
 op=1
 while True:
     print('=' * 30)
-    print('Para começar, escolha uma das opções abaixo:\n1- Cadastrar-se\n2- Comprar software\n3- Saiba mais\n4- Sair')
+    print('Para começar, escolha uma das opções abaixo:\n1- Cadastrar-se\n2- Comprar software\n3- Saiba mais\n4 - perfil consultor\n5- Sair')
     print('=' * 30)
     op = int(input('Digite sua opção: '.strip()))
     if op==1:
@@ -102,6 +102,8 @@ while True:
                     email = input('Digite seu e-mail: ')
                     formacao = input('Qual a sua formação? ')
                     experiencia = input('Quais são suas experiências na área da TI? ')
+                    taxa_comissao = int (input("Digite quantos % voce cobra pela consultoria"))
+                    comissao = 0
                     print('Muito obrigado(a) pela paciência ' + str(nome) + '! \nO cadastro foi realizado com sucesso!')
                     break
         elif op2==4:
@@ -158,6 +160,9 @@ while True:
             if op4 == 1:
                 print('='*30)
                 input()
+                print("\n\tVoce tem a pagar pelo software o valor de:",preco_software)
+                comissao += ((taxa_comissao/100) * (int(preco_software)))
+                print("O consultor de comissão receberá o valor de:",comissao)
                 print('Obrigado pela preferencia! \nEscolha um dos metodos disponis para prosseguir com a sua compra!')
                 print('Metodos de pagamento disponiveis:')
                 print('Cartao de credito, digite 1')
@@ -262,8 +267,19 @@ while True:
             print('='*30)
             input()
             print('Python Bridge surgiu através ada necessidade um intermediador e um facilitador para empresas que procuram implantar softwares.\nNossa equipe altamente dedicada e atensiosa tem como objetivo facilitar sua vida\ne lhe mostrar oque ha de melhor no mercado atual.')
+            print('\nIntegrantes do grupo:\nMaria Helena Saraiva\nDouglas Chaves\nGuilherme Schmidt\nVinicius Brandao\nHelen Lazarotti\nRodrigo Pioner')
+            print('\nProjeto Integrador')
+            print('\nPython Bridge é o nosso nome, pois o nosso propósito é fazer a ponte entre todos os stakeholders envolvidos na aquisição de um software: os fornecedores, os clientes e os consultores. Para criarmos esse nome, partimos da ideia dessa conexão que promoveremos. Além disso, julgamos importante que o nome da linguagem que estamos aprendendo nesse trimestre e que iremos utilizar no desenvolvimento do nosso software aparecesse. Ademais, optamos por um nome em inglês pois além desta ser a língua mais falada no mundo, a maior parte das linguagens de programação, dos softwares e dos componentes de hardware são feitos em inglês.')
             print('=' * 30)
             input()
             break
+    elif op==4:
+        while True:
+            print('='*30)
+            input()
+            print('\n\nOlá, atenção: você tem de comissão a receber:',comissao)
+            print('\nOlá consultor com nome:',nome,'\nSeu cpf é:',cpf,'\nSeu telefone é:',telefone,'\nSeu email é:email,'\nSua formacao é:',formacao,'\nSua experiencia é:',experiencia,'\nSua taxa de comissão é:',taxa_comissao)
+          
+                       
     else:
         break
