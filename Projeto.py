@@ -1,3 +1,7 @@
+import time
+import random
+import loading_bar
+
 print('='*30,'\nBem-vindo ao Python Bridge!')
 print('='*30)
 input()
@@ -12,19 +16,17 @@ while True:
         if op2==1:
             controle = 1
             while True:
-
                 print('1-Fazer Login \n2-Fazer Cadastro \n3-Sair')
                 controle = int(input('Escolha uma opoção acima: '))
-
-                if controle == 3:
-                    break
                 print('-' * 50, end='\n')
 
                 if controle == 1:
                     email = input('Digite seu e-mail: ')
                     senha = input('Digite seu CPF: ')
                     print(email, senha)
-                    print('Aguarde uns segundos...')
+                    time.sleep(5)
+                    print('Fazendo login...')
+                    loading_bar.loadingBar("Fazendo login")
                     break
                 elif controle == 2:
                     print('\n\nOlá, vamos realizar seu cadastro!\nAbaixo nos informe os dados solicitados')
@@ -126,9 +128,6 @@ while True:
                 print('='*30)
                 input('Obrigado por cadastrar seu software, para sair pressione ENTER:')
                 break
-
-
-
         elif op==5:
             break
     elif op==2:
